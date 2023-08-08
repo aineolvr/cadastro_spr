@@ -1,161 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Sistema de controle</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background-color: white;
-}
-
-header {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    border-bottom: 1px solid #D9D9D9;
-    padding: 0 30px;
-}
-
-.logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo img {
-    width: 100%;
-    height: 50px;
-}
-
-.logo svg {
-    width: 45px;
-    height: 45px;
-    margin-left: 50px;
-}
-
-.logo h2 {
-    font-size: 19px;
-    margin-left: 30px;
-}
-
-.header-content {
-    display: flex;
-    align-items: center;
-}
-
-.header-content h2 {
-    font-size: 19px;
-    margin-right: 10px;
-}
-
-.header-content p {
-    font-size: 15px;
-}
-
-.header-content svg {
-    cursor: pointer; 
-    margin-bottom: 20px;
-}
-
-.info{
-display: flex;
-flex-direction: column;
-}
-
-
-.options-card {
-    margin-right: 30px;
-    height: 190px;
-    width: 300px;
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    z-index: 1000;
-}
-
-.options-list {
-    list-style: none;
-    padding: 0;
-}
-
-.options-list li {
-    padding: 15px 0;
-    cursor: pointer;
-}
-
-
-
-.options-card.show {
-    display: block;
-}
-
-.options-card p {
-    margin-bottom: 10px;
-}
-
-.options-card ul {
-    border-top: 1px solid #D9D9D9;
-}
-
-.options-list li {
-    font-size: 15px;
-    padding-left: 10px;
-   
     
-}
+        <header>
+            <div class="logo"><img src="./images/Imagem do WhatsApp de 2023-08-07 à(s) 18.02.24.jpg"/>
+                <svg width="35" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="32" width="32" height="32" rx="16" transform="rotate(90 32 0)" fill="#828282"/>
+                    <path d="M18 11L12 16L18 21" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>Eventos</h2>
+            </div><!--logo-->
+              
+                <div class="header-content">
+                    <div class="info">
+                        <h2>SPR SISTEMAS DE CONTROLE</h2>
+                        <p>email@gmail.com</p>
 
-.options-list a{
-    color: black;
-}
+                    </div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/></svg>
+            <div class="options-card">
+                <ul class="options-list">
+                    <li style="border-bottom: 1px solid #D9D9D9;">Empresas</li>
+                    <li style="border-bottom: 1px solid #D9D9D9;">Administradores</li>
+                    <li class="logout"><a href="#">Sair<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="logout"><line class="cls-1" x1="15.92" x2="28.92" y1="16" y2="16"/><path d="M23.93,25v3h-16V4h16V7h2V3a1,1,0,0,0-1-1h-18a1,1,0,0,0-1,1V29a1,1,0,0,0,1,1h18a1,1,0,0,0,1-1V25Z"/><line class="cls-1" x1="28.92" x2="24.92" y1="16" y2="20"/><line class="cls-1" x1="28.92" x2="24.92" y1="16" y2="12"/><line class="cls-1" x1="24.92" x2="24.92" y1="8.09" y2="6.09"/><line class="cls-1" x1="24.92" x2="24.92" y1="26" y2="24"/></g></svg></a></li>
+                </ul>
+            </div>
+        </div>  <!--header-content-->
+        </header>
 
-.options-list li.logout{
-display: flex;
-align-items: center;
-margin-bottom: 0;
+      
+
+        
+    
 
 
-}
-
-.logout svg {
-    width:18px;
-    height: 18px;
-    margin-left: 1px;
-    margin-top: 14px;
-    vertical-align: middle;
-}
-
-@media (max-width: 768px) {
-    header {
-        flex-direction: column; /* Para empilhar os elementos verticalmente */
-        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
-        height: auto; /* Redefinir a altura para se ajustar ao conteúdo */
-    }
-
-    .logo {
-        justify-content: center; /* Centralizar o logo verticalmente */
-        margin-bottom: 10px; /* Adicionar um espaço entre o logo e a header-content */
-    }
-
-    .header-content {
-        flex-direction: column; /* Empilhar os elementos verticalmente */
-        align-items: center; /* Centralizar horizontalmente */
-    }
-
-    .options-card {
-        width: 100%; /* Preencher a largura da tela */
-        top: 80px; /* Afastar o card da parte superior */
-        left: 0; /* Alinhar o card à esquerda */
-        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
-    }
-
-    .options-list li {
-        padding: 10px 0; /* Reduzir o espaçamento entre os itens da lista */
-    }
-}
+    <script src="./script.js"></script>
+</body>
+</html>
