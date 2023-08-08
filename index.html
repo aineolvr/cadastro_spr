@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 0 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 50px;
+}
+
+.logo svg {
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+}
+
+.logo h2 {
+    font-size: 19px;
+    margin-left: 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content h2 {
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.header-content p {
+    font-size: 15px;
+}
+
+.header-content svg {
+    cursor: pointer; 
+    margin-bottom: 20px;
+}
+
+.info{
+display: flex;
+flex-direction: column;
+}
+
+
+.options-card {
+    margin-right: 30px;
+    height: 190px;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+}
+
+.options-list li {
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+
+
+.options-card.show {
+    display: block;
+}
+
+.options-card p {
+    margin-bottom: 10px;
+}
+
+.options-card ul {
+    border-top: 1px solid #D9D9D9;
+}
+
+.options-list li {
+    font-size: 15px;
+    padding-left: 10px;
+   
+    
+}
+
+.options-list a{
+    color: black;
+}
+
+.options-list li.logout{
+display: flex;
+align-items: center;
+margin-bottom: 0;
+
+
+}
+
+.logout svg {
+    width:18px;
+    height: 18px;
+    margin-left: 1px;
+    margin-top: 14px;
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Para empilhar os elementos verticalmente */
+        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
+        height: auto; /* Redefinir a altura para se ajustar ao conteúdo */
+    }
+
+    .logo {
+        justify-content: center; /* Centralizar o logo verticalmente */
+        margin-bottom: 10px; /* Adicionar um espaço entre o logo e a header-content */
+    }
+
+    .header-content {
+        flex-direction: column; /* Empilhar os elementos verticalmente */
+        align-items: center; /* Centralizar horizontalmente */
+    }
+
+    .options-card {
+        width: 100%; /* Preencher a largura da tela */
+        top: 80px; /* Afastar o card da parte superior */
+        left: 0; /* Alinhar o card à esquerda */
+        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
+    }
+
+    .options-list li {
+        padding: 10px 0; /* Reduzir o espaçamento entre os itens da lista */
+    }
+}
