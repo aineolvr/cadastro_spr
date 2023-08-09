@@ -131,24 +131,27 @@ margin-bottom: 0;
     vertical-align: middle;
 }
 
+
+
+.container{
+align-items: center;
+justify-content: center;
+padding: 10px 100px;
+display: flex;
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+}
+
 .info-usuario{
-    margin-right: 10px;
+    
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-bottom: 30px;
 }
 
 .mdc-text-field{
-   width: 250px;
+   width: 240px;
    height: 40px;
-}
-
-
-.container{
-padding: 10px 70px;
-display: flex;
-width: 100%;
-border-bottom: 1px solid #D9D9D9;
 }
 
 .edit-container{
@@ -171,7 +174,94 @@ border-bottom: 1px solid #D9D9D9;
    align-items: center;
 }
 
+.container-crud{
+    padding: 20px 200px;
+}
+.div-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.div-content h2{
+    font-size: 21px;
+}
+
+.div-content .mdc-button{
+    background-color: black;
+    color: rgb(242, 237, 237);
+}
+
+.id-nome{
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.id-nome h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+.crud{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.name{
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.edit svg{
+    display: flex;
+    align-items: center;
+    width: 22px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+.btns-actions{
+    margin-left: 20px;
+}
+
+.btns-actions button {
+    margin-left: 20px;
+}
+
+.btns-actions .btn-menor{
+    width: 32px;
+}
+
+
+
+.icon-delete svg{
+    width:25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+footer{
+    margin-top: 30px;
+    border-top: 1px solid #D9D9D9;
+    height: 40px;
+    width: 100%;
+}
+
+footer p {
+    margin-right: 10px;
+    margin-top: 8px;
+    float: right;
+    font-size: 14px;
+    color: #a3a2a2;
+}
 
 @media (max-width: 768px) {
     header {
@@ -288,6 +378,86 @@ border-bottom: 1px solid #D9D9D9;
 }
 
 
+.container-crud{
+    padding: 10px 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.div-content{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-content h2{
+    margin-left: 18px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.div-content .mdc-button{
+    font-size: 10px;
+    width: 100px;
+    background-color: black;
+    color: rgb(242, 237, 237);
+}
+
+.id-nome{
+    font-size: 13px;
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.id-nome h3{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+.crud{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.name{
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+
+.btns-actions{
+  display: block;
+
+}
+
+.btns-actions .btn-menor{
+    width: 12px;
+    height: 27px;
+    font-size: 10px;
+}
+
+.btns-actions button {
+   width: 42px;
+   font-size: 10px;
+}
+
+
+.icon-delete svg{
+    width:25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 
    
+
+
 }
