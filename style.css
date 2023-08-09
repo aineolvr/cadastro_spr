@@ -4,6 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+
+body{
     font-family: 'Roboto', sans-serif;
     background-color: white;
 }
@@ -106,9 +110,7 @@ flex-direction: column;
 
 .options-list li {
     font-size: 15px;
-    padding-left: 10px;
-   
-    
+    padding-left: 10px; 
 }
 
 .options-list a{
@@ -119,8 +121,6 @@ flex-direction: column;
 display: flex;
 align-items: center;
 margin-bottom: 0;
-
-
 }
 
 .logout svg {
@@ -130,6 +130,48 @@ margin-bottom: 0;
     margin-top: 14px;
     vertical-align: middle;
 }
+
+.info-usuario{
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.mdc-text-field{
+   width: 250px;
+   height: 40px;
+}
+
+
+.container{
+padding: 10px 70px;
+display: flex;
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+}
+
+.edit-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.edit-container svg{
+    width: 22px;
+    margin-left: 20px;
+    display: flex;
+   align-items: center;
+}
+
+.edit-container a {
+    font-size: 15px;
+    color: black;
+   display: flex;
+   align-items: center;
+}
+
+
 
 @media (max-width: 768px) {
     header {
@@ -199,6 +241,53 @@ margin-bottom: 0;
        
        justify-content: center;
     }
+
+
+    
+.info-usuario{
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.mdc-text-field{
+   width: 220px;
+   height: 40px;
+}
+
+
+.container{
+padding: 10px 30px;
+display: block;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+}
+
+.edit-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.edit-container svg{
+    width: 22px;
+    margin-left: 20px;
+    display: flex;
+   align-items: center;
+}
+
+.edit-container a {
+    font-size: 15px;
+    color: black;
+   display: flex;
+   align-items: center;
+}
+
+
 
    
 }
