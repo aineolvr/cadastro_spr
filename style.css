@@ -143,19 +143,62 @@ margin-bottom: 0;
         margin-bottom: 10px; /* Adicionar um espaço entre o logo e a header-content */
     }
 
+    .logo img {
+        width: 100%;
+        height: 30px;
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* mudança aqui*/
+    }
+
     .header-content {
-        flex-direction: column; /* Empilhar os elementos verticalmente */
-        align-items: center; /* Centralizar horizontalmente */
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center; /* Centralizar horizontalmente */ 
     }
 
     .options-card {
-        width: 100%; /* Preencher a largura da tela */
-        top: 80px; /* Afastar o card da parte superior */
+        margin-left: 35px;
+        height: 190px;
+        width: 330px;
+        top: 130px; /* Afastar o card da parte superior */
         left: 0; /* Alinhar o card à esquerda */
         padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
     }
 
+
+   .options-list{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   
+   li.option-item{
+    padding: 20px 15px;
+   }
+
+   li.logout{
+    padding: 5px;
+   }
+
     .options-list li {
-        padding: 10px 0; /* Reduzir o espaçamento entre os itens da lista */
+        cursor: pointer;       
     }
+
+    .options-list li.logout{
+       text-align: center;
+       display: flex;
+       
+       justify-content: center;
+    }
+
+   
 }
