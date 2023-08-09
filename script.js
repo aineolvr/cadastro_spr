@@ -1,3 +1,5 @@
+
+
 const headerContent = document.querySelector('.header-content');
 const optionsCard = document.querySelector('.options-card');
 const svgIcon = document.querySelector('.header-content svg');
@@ -13,3 +15,4 @@ document.addEventListener('click', (event) => {
         optionsCard.classList.remove('show');
     }
 })
+
