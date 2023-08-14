@@ -205,15 +205,7 @@ border-bottom: 1px solid #D9D9D9;
     margin-bottom: 10px;
 }
 
-.crud{
-    width: 100%;
-}
 
-.row{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-}
 
 .name{
     font-size: 16px;
@@ -280,33 +272,7 @@ footer p {
         margin-bottom: 10px; /* Adicionar um espaço entre o logo e a header-content */
     }
 
-    .div-logo{
-        justify-content: center; /* Centralizar o logo verticalmente */
-        padding: 10px 30px;
-    }
-
-
-    .div-logo img{
-        width: 100%;
-        height: 30px;
-    }
-
-    .div-logo .logo-seta{
-       display: flex;
-      
-        
-    }
-
-    .div-logo .h2-p{
-      display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 12px;
-        padding: 0;
-        margin-left: 20px;
-    }
-
+   
     .logo img {
         width: 100%;
         height: 30px;
@@ -336,6 +302,7 @@ footer p {
         top: 130px; /* Afastar o card da parte superior */
         left: 0; /* Alinhar o card à esquerda */
         padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
+      
     }
 
 
@@ -452,16 +419,6 @@ border-bottom: 1px solid #D9D9D9;
 }
 
 
-.crud{
-    width: 100%;
-}
-
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-}
 
 .name{
     font-size: 13px;
@@ -516,8 +473,11 @@ footer p {
 
 /* COMEÇANDO AQUI O STYLE DA SEGUNDA TELA*/
 
+
+
+
 .div-logo{
-    display: flex;
+   display: flex;
     justify-content: space-between;
     align-items: center;
 }
@@ -528,13 +488,425 @@ footer p {
 }
 
 .div-logo .logo-seta{
-    width: 32px;
-    height: 32px;
+   
+    width: 30px;
+    height: 30px;
 }
 
 .div-logo h2{
     font-size: 19px;
     padding: 0 20px;
-    margin-left: 5px;
+   
+}
+
+.pai-menu{
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: 850px;
+    background-color: #D9D9D9;
+}
+
+.menu-content{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.menu-content svg{
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+   margin-bottom: 2px;
+}
+
+.menu-content .btn-import{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+
+.pai-menu-mobile .menu-content {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    margin-left: 50px;
+    padding-top: 20px;
+    background-color: #D9D9D9;
+    padding: 20px 10px;
+    z-index: 1000;
+}
+
+
+
+.mobile-menu-button {
+    transform: translateY(-50%);
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 52px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+
+#additional-buttons {
+    display: none;
+}
+
+.content-global{
+   display: flex;
+}
+
+
+
+.content-options{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.content-options h2{
+    font-size: 21px;
+}
+
+.content-um{
+    padding: 30px 0 0 20px;
+}
+
+.content-dois{
+    padding: 10px 15px 0  20px;
+    
+   
+}
+
+.content-dois p {
+    padding: 3px 0;
+    font-size: 19px;
+ 
+}
+
+.input-btns{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.container-content-main{
+    display: block;
+    width: 80%;
+}
+
+.input-btns input{
+    padding: 8px;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    margin-right: 1px;
+}
+
+.input-btns button{
+    margin-right: 10px;
+}
+
+  
+.input-btns {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.input-svg {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-svg input[type=text] {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.input-svg svg {
+    position: absolute;
+    right: 10px; 
+    width: 40px;
+    height: auto;
+    top: 5px;
+   
+}
+
+.input-svg .custom-button {
+    border: none;
+    cursor: pointer;
+}
+
+
+.modal-id{
+    margin-left: 40px;
+    width: 90%;
+    display: flex;
+    margin-top: 40px;
+    border-bottom: 2px solid black;
+}
+
+.modal-id h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+   
+}
+
+.edit-dois{
+    margin-left: 30px;
+}
+
+.btn-crud-dois{
+    margin-left: 40px;
+   
+}
+
+
+
+.mdc-data-table{
+ margin-left: 70px;
+ margin-top: 40px;
+}
+
+thead th.detail{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+thead th.id{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+thead th.name{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+thead th{
+    border-bottom: 1px solid black !important;
+}
+
+tbody th{
+    border-bottom: 1px solid #D9D9D9 !important;
+    
+}
+
+tbody  td{
+    border-bottom: 1px solid #D9D9D9 !important;
+    
+}
+
+
+.fixed-icon{
+    position: fixed;
+    z-index: 1000;
+}
+
+@media(max-width:768px){
+
+    .div-logo{
+        justify-content: center; /* Centralizar o logo verticalmente */
+        padding: 10px 30px;
+    }
+
+
+    .div-logo img{
+        width: 50%;
+        height: 30px;
+    }
+
+    .div-logo .logo-seta{
+       display: flex;
+        width: 32px;
+        
+    }
+
+    .div-logo .h2-p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+
+
+    .pai-menu{
+        display: none;
+       
+    }
+
+    .pai-menu-mobile .mobile-menu{
+        display: block;
+    }
+
+    .mobile-menu button{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       padding: 10px 0;
+    }
+    
+    .mobile-menu-button{
+        display: block;
+       position: absolute;
+    }
+
+
+    
+.content-options{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.content-um{
+    padding: 10px 60px;
+    width: 100%;
+}
+
+.content-um h2{
+    font-size: 14px;
+}
+
+.content-dois{
+  padding: 0px;
+  margin-bottom: 21px;
+  
+}
+
+.content-dois h2{
+    font-size: 14px;
+}
+
+.content-dois p {
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 3px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.input-btns{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-btns input{
+    padding: 8px;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+
+.input-btns button{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: block;
+}
+
+.input-btns .btn-edit{
+    margin-left: 20px;
+}
+  
+.input-btns {
+    display: block;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.container-content-main{
+    display: block;
+    width: 100%;
+}
+
+
+.input-svg {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-svg input[type=text] {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.input-svg svg {
+    position: absolute;
+    left: 280px; 
+    width: 40px;
+    height: auto;
+    top: 5px;
+   
+}
+
+.input-svg .custom-button {
+    border: none;
+    cursor: pointer;
+}
+
+
+.mdc-data-table{
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 400px;
+    
+   }
+
+   .btn-crud-dois{
+    margin-left: 0px;
+   
+}
+
+.edit-dois{
+    margin-left: 0px;
+}
+
+
+
+
 }
 
